@@ -67,3 +67,10 @@
     @apply bg-background text-foreground;
   }
 }
+
+.bg-Background {
+  background-image: url('./assets/Background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
