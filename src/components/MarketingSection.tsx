@@ -64,9 +64,9 @@ const cardsData = [
 
 const MarketingSection = () => {
     return (
-        <div className="p-4">
+        <div className="p-4 bg-white rounded-2xl border-2">
             <h2 className="text-2xl font-bold mb-4">Marketing</h2>
-            <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="w-full grid grid-cols-2 xl:grid-cols-4 gap-4">
                 {cardsData.map(card => (
                     <MarketingCard
                         key={card.id}

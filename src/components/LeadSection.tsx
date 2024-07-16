@@ -41,7 +41,7 @@ const leads = [
 
 export function LeadSection() {
     return (
-        <div className=" min-w-[390px] flex flex-col justify-between items-center border border-gray-200 rounded-lg shadow-sm">
+        <div className="bg-white w-full min-w-[390px] flex flex-col justify-between items-center border border-gray-200 rounded-lg shadow-sm">
             <div className="p-4">
                 <div className="flex justify-between items-center">
                     <h1 className="text-xl font-bold">Leads</h1>
@@ -50,7 +50,7 @@ export function LeadSection() {
                     </div>
                 </div>
             </div>
-            <div className="p-4 sm:grid sm:grid-cols-2 gap-4">
+            <div className="p-4 lg:grid lg:grid-cols-2 gap-4">
                 {leads.map((lead) => (
                     <LeadCard
                         key={lead.id}

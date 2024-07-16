@@ -4,7 +4,7 @@ import {Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigg
 import {Avatar, AvatarFallback, AvatarImage} from "./ui/avatar.tsx";
 function Navbar() {
     return (
-        <nav className="flex items-center justify-between p-4 bg-white shadow-md">
+        <nav className="flex w-full items-center justify-between p-4">
             <div className="flex items-center space-x-4 ">
                 <div>
                     <span className="text-lg">Welcome, Moni Roy</span>
@@ -17,7 +17,7 @@ function Navbar() {
                 </div>
             </div>
             <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 rounded-2xl border-2 flex items-center justify-center">
+                <div className="bg-white w-12 h-12 rounded-2xl border-2 flex items-center justify-center">
                     <BellIcon className="w-1/2 h-1/2 text-gray-500"/>
                 </div>
 

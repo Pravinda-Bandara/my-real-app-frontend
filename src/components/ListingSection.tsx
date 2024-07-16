@@ -33,7 +33,7 @@ const listings = [
 
 export function ListingSection() {
     return (
-        <div className=" min-w-[390px] flex flex-col justify-between items-center border border-gray-200 rounded-lg shadow-sm">
+        <div className="bg-white w-full min-w-[390px] flex flex-col justify-between items-center border border-gray-200 rounded-lg shadow-sm">
             <div className="p-4">
                 <div className="flex justify-between items-center">
                     <h1 className="text-xl font-bold">Listings</h1>
@@ -42,9 +42,9 @@ export function ListingSection() {
                     </div>
                 </div>
             </div>
-            <div className="p-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="p-4 grid grid-cols-1 lg:grid-cols-2 gap-4">
                 {listings.map((item, index) => (
-                    <div key={item.id} className={`${index === 2 ? 'sm:col-span-2' : ''}`}>
+                    <div key={item.id} className={`${index === 2 ? 'lg:col-span-2' : ''}`}>
                         <LeadCard
                             type={item.type}
                             count={item.count}
