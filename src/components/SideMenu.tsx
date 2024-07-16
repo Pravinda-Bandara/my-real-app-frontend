@@ -12,8 +12,8 @@ import {
 
 const SideMenu = () => {
     return (
-        <div className="w-48 h-full bg-white  flex flex-col  justify-between content-between border-2">
-            <div>
+        <div className="w-48 h-auto bg-white  flex flex-col  justify-between content-between border-2">
+            <div className="flex-col flex items-start">
                 <div className="p-4 text-xl font-bold w-full h-full">myRealPage</div>
                 <MenubarSeparator className="my-2 border-gray-300" />
                 <Menubar className="flex flex-col w-full h-full border-0">
