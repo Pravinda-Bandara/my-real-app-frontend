@@ -74,3 +74,14 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+/* App.css */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f7fafc; /* Tailwind's bg-gray-100 color */
+}
