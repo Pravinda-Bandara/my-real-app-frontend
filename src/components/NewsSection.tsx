@@ -25,9 +25,9 @@ const newsData = [
 
 const NewsSection = () => {
     return (
-        <div className="p-4 w-[200px]">
-            <h2 className="text-xl font-bold mb-4 text-center">Updates & News</h2>
-            <div className="flex flex-col items-center">
+        <div className="rounded-2xl w-[180px] 2xl:w-[250px]">
+            <h2 className="text-xl font-bold mb-4">Updates & News</h2>
+            <div className="flex flex-col items-center ">
                 {newsData.map(news => (
                     <NewsCard
                         key={news.id}
@@ -40,5 +40,6 @@ const NewsSection = () => {
         </div>
     );
 };
+
 
 export default NewsSection;
