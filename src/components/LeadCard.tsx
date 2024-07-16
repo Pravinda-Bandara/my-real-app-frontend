@@ -9,19 +9,19 @@ const LeadCard = ({ type, count, change, status, note }) => {
     };
 
     return (
-        <div className="w-full w-min-[200px]">
-            <Card className="shadow-md rounded-md flex flex-col justify-between">
-                <CardHeader>
-                    <CardTitle className="text-xs">{type}</CardTitle>
-                    <CardTitle className="text-4xl">{count}</CardTitle>
+        <div className="w-full md:w-auto">
+            <Card className="border-2 rounded-lg flex flex-col justify-between p-6 xl:p-4 2xl:p-6">
+                <CardHeader className="space-y-2 xl:space-y-1 2xl:space-y-2">
+                    <CardTitle className="text-base xl:text-sm 2xl:text-base">{type}</CardTitle>
+                    <CardTitle className="text-3xl xl:text-3xl 2xl:text-5xl">{count}</CardTitle>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="space-y-2 xl:space-y-1 2xl:space-y-2">
                     {change && (
-                        <p className={`text-xs ${statusStyles[status]}`}>
+                        <p className={`text-xs xl:text-xs 2xl:text-sm ${statusStyles[status]}`}>
                             {change} {status === 'up' && 'Up'} from yesterday
                         </p>
                     )}
-                    <CardDescription className="text-xs">{note}</CardDescription>
+                    <CardDescription className="text-xs xl:text-xs 2xl:text-sm">{note}</CardDescription>
                 </CardContent>
             </Card>
         </div>
