@@ -2,6 +2,7 @@ import React from 'react';
 import LeadCard from "./LeadCard.tsx";
 import { Button } from "./ui/button.tsx";
 import DatePicker from "./DatePicker.tsx";
+import NewDate from "./NewDate.tsx";
 
 const leads = [
     {
@@ -47,11 +48,11 @@ export function LeadSection() {
                 <div className="flex justify-between items-center">
                     <h1 className="text-xl font-bold">Leads</h1>
                     <div className="flex items-center">
-                        <DatePicker/>
+                        <NewDate/>
                     </div>
                 </div>
 
-            <div className="pt-4 lg:grid lg:grid-cols-2 gap-4">
+            <div className="pt-4 grid grid-cols-2 gap-4">
                 {leads.map((lead) => (
                     <LeadCard
                         key={lead.id}
@@ -61,7 +62,7 @@ export function LeadSection() {
                         status={lead.status}
                         note={lead.note}
                     />
-                ))}
+                ))}CustomDatePicker
             </div>
             </div>
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import LeadCard from "./LeadCard.tsx";
 import { Button } from "./ui/button.tsx";
-import DatePicker from "./DatePicker.tsx";
+import NewDate from "./NewDate.tsx";
 
 const listings = [
     {
@@ -39,13 +39,13 @@ export function ListingSection() {
                 <div className="flex justify-between items-center">
                     <h1 className="text-xl font-bold">Listings</h1>
                     <div className="flex items-center">
-                        <DatePicker />
+                        <NewDate/>
                     </div>
                 </div>
 
-            <div className="pt-4 grid grid-cols-1 lg:grid-cols-2 gap-4">
+            <div className="pt-4 grid grid-cols-2 gap-4">
                 {listings.map((item, index) => (
-                    <div key={item.id} className={`${index === 2 ? 'lg:col-span-2' : ''}`}>
+                    <div key={item.id} className={`${index === 2 ? 'col-span-2' : ''}`}>
                         <LeadCard
                             type={item.type}
                             count={item.count}
