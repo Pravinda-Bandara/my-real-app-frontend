@@ -12,7 +12,7 @@ import {
 
 const SideMenu = () => {
     return (
-        <div className="w-48 h-auto bg-white  flex flex-col  justify-between content-between border-2">
+        <div className="w-48 h-full bg-white  flex flex-col  justify-between content-between border-r-2">
             <div className="flex-col flex items-start">
                 <div className="p-4 text-xl font-bold w-full h-full">myRealPage</div>
                 <MenubarSeparator className="my-2 border-gray-300" />
@@ -55,10 +55,10 @@ const SideMenu = () => {
                     </MenubarMenu>
                 </Menubar>
             </div>
-            <div>
-                <MenubarSeparator className="my-2 border-gray-300" />
+            <div >
+                <MenubarSeparator className=" border-gray-300" />
                 <Menubar className="flex flex-col w-full h-full border-0">
-                    <MenubarMenu>
+                    <MenubarMenu >
                         <MenubarTrigger className="flex items-center w-full text-left p-4 hover:bg-gray-200">
                             <MessageCircleQuestion className="w-5 h-5 mr-2"/>
                             Support

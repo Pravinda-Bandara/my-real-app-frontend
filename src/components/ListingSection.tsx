@@ -1,6 +1,7 @@
 import React from 'react';
 import LeadCard from "./LeadCard.tsx";
 import { Button } from "./ui/button.tsx";
+import DatePicker from "./DatePicker.tsx";
 
 const listings = [
     {
@@ -33,16 +34,16 @@ const listings = [
 
 export function ListingSection() {
     return (
-        <div className="bg-white w-full min-w-[390px] flex flex-col justify-between items-center border border-gray-200 rounded-lg shadow-sm">
+        <div className="bg-white w-full min-w-[390px] h-auto flex flex-col items-center border border-gray-200 rounded-lg shadow-sm">
             <div className="p-4">
                 <div className="flex justify-between items-center">
                     <h1 className="text-xl font-bold">Listings</h1>
                     <div className="flex items-center">
-                        <span className="mr-2">18, May 2024 - 09, Jun 2024</span>
+                        <DatePicker />
                     </div>
                 </div>
-            </div>
-            <div className="p-4 grid grid-cols-1 lg:grid-cols-2 gap-4">
+
+            <div className="pt-4 grid grid-cols-1 lg:grid-cols-2 gap-4">
                 {listings.map((item, index) => (
                     <div key={item.id} className={`${index === 2 ? 'lg:col-span-2' : ''}`}>
                         <LeadCard
@@ -55,9 +56,12 @@ export function ListingSection() {
                     </div>
                 ))}
             </div>
-            <div className="flex justify-center items-center p-4">
-                <Button className="bg-transparent text-blue-500 m-0 p-6 hover:bg-transparent">View All</Button>
             </div>
+
+            <div className="flex justify-center items-center w-full m-0 pb-3">
+                <Button className="bg-transparent text-blue-500 m-0 p-0 hover:bg-transparent">View All</Button>
+            </div>
+
         </div>
     );
 }
