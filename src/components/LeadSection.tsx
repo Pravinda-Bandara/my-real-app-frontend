@@ -1,7 +1,6 @@
 import React from 'react';
 import LeadCard from "./LeadCard.tsx";
 import { Button } from "./ui/button.tsx";
-import DatePicker from "./DatePicker.tsx";
 import NewDate from "./NewDate.tsx";
 
 const leads = [
@@ -12,7 +11,7 @@ const leads = [
         "count": 100,
         "change": "8.5%",
         "status": "up",
-        "note": "Up from yesterday"
+        "note": ""
     },
     {
         "id": 2,
@@ -21,7 +20,7 @@ const leads = [
         "count": 100,
         "change": "8.5%",
         "status": "up",
-        "note": "Up from yesterday"
+        "note": ""
     },
     {
         "id": 3,
@@ -43,11 +42,11 @@ const leads = [
 
 export function LeadSection() {
     return (
-        <div className="bg-white w-full min-w-[390px] h-auto flex flex-col items-center border border-gray-200 rounded-lg shadow-sm">
+        <div className="bg-white w-full min-w-[390px] h-auto flex flex-col justify-center content-center items-center border border-gray-200 rounded-lg shadow-sm">
             <div className="p-4">
                 <div className="flex justify-between items-center">
                     <h1 className="text-xl font-bold">Leads</h1>
-                    <div className="flex items-center">
+                    <div className="flex">
                         <NewDate/>
                     </div>
                 </div>
@@ -62,7 +61,7 @@ export function LeadSection() {
                         status={lead.status}
                         note={lead.note}
                     />
-                ))}CustomDatePicker
+                ))}
             </div>
             </div>
 
