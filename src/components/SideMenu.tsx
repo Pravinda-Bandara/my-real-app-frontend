@@ -12,43 +12,43 @@ import {
 
 const SideMenu = () => {
     return (
-        <div className="w-48 h-full bg-white  flex flex-col  justify-between content-between border-r-2">
+        <div className="w-48 h-full bg-white  flex flex-col px-2  justify-between content-between border-r-2">
             <div className="flex-col flex items-start">
-                <div className="p-4 text-xl font-bold w-full h-full">myRealPage</div>
+                <div className="p-4 text-xl font-bold w-full h-full"><span className="text-blue-600">my</span>RealPage</div>
                 <MenubarSeparator className="my-2 border-gray-300" />
                 <Menubar className="flex flex-col w-full h-full border-0">
                     <MenubarMenu>
-                        <MenubarTrigger className="flex items-center w-full text-left p-4 hover:bg-gray-200">
+                        <MenubarTrigger className="flex items-center w-full text-left p-4 hover:bg-blue-600  hover:rounded-2xl hover:text-white">
                             <LayoutDashboard  className="w-5 h-5 mr-2" />
                             Dashboard
                         </MenubarTrigger>
                     </MenubarMenu>
                     <MenubarMenu>
-                        <MenubarTrigger className="flex items-center w-full text-left p-4 hover:bg-gray-200">
+                        <MenubarTrigger className="flex items-center w-full text-left p-4 hover:bg-blue-600  hover:rounded-2xl hover:text-white">
                             <UsersIcon className="w-5 h-5 mr-2" />
                             Leads
                         </MenubarTrigger>
                     </MenubarMenu>
                     <MenubarMenu>
-                        <MenubarTrigger className="flex items-center w-full text-left p-4 hover:bg-gray-200">
+                        <MenubarTrigger className="flex items-center w-full text-left p-4 hover:bg-blue-600  hover:rounded-2xl hover:text-white">
                             <Volume2 className="w-5 h-5 mr-2"/>
                             Marketing
                         </MenubarTrigger>
                     </MenubarMenu>
                     <MenubarMenu>
-                        <MenubarTrigger className="flex items-center w-full text-left p-4 hover:bg-blue-600 hover:rounded-2xl hover:text-white">
+                        <MenubarTrigger className="flex items-center w-full text-left p-4 hover:bg-blue-600  hover:rounded-2xl hover:text-white">
                             <ClipboardListIcon className="w-5 h-5 mr-2" />
                             Listings
                         </MenubarTrigger>
                     </MenubarMenu>
                     <MenubarMenu>
-                        <MenubarTrigger className="flex items-center w-full text-left p-4 hover:bg-gray-200">
+                        <MenubarTrigger className="flex items-center w-full text-left p-4 hover:bg-blue-600  hover:rounded-2xl hover:text-white">
                             <ReceiptText  className="w-5 h-5 mr-2"/>
                             Billing
                         </MenubarTrigger>
                     </MenubarMenu>
                     <MenubarMenu>
-                        <MenubarTrigger className="flex items-center w-full text-left p-4 hover:bg-gray-200">
+                        <MenubarTrigger className="flex items-center w-full text-left p-4 hover:bg-blue-600  hover:rounded-2xl hover:text-white">
                             <NewspaperIcon className="w-5 h-5 mr-2" />
                             News
                         </MenubarTrigger>
@@ -59,13 +59,13 @@ const SideMenu = () => {
                 <MenubarSeparator className=" border-gray-300" />
                 <Menubar className="flex flex-col w-full h-full border-0">
                     <MenubarMenu >
-                        <MenubarTrigger className="flex items-center w-full text-left p-4 hover:bg-gray-200">
+                        <MenubarTrigger className="flex items-center w-full text-left p-4 hover:bg-blue-600  hover:rounded-2xl hover:text-white">
                             <MessageCircleQuestion className="w-5 h-5 mr-2"/>
                             Support
                         </MenubarTrigger>
                     </MenubarMenu>
                     <MenubarMenu>
-                        <MenubarTrigger className="flex items-center w-full text-left p-4 hover:bg-gray-200">
+                        <MenubarTrigger className="flex items-center w-full text-left p-4 hover:bg-blue-600  hover:rounded-2xl hover:text-white">
                             <CogIcon className="w-5 h-5 mr-2" />
                             Settings
                         </MenubarTrigger>

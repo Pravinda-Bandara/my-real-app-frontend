@@ -10,9 +10,9 @@ const LeadCard = ({ type, count, change, status, note }) => {
 
     return (
         <div className="w-full md:w-auto">
-            <Card className="border-2 rounded-lg flex flex-col justify-between p-6 xl:p-4 2xl:p-6">
+            <Card className="border-2 rounded-lg flex flex-col justify-between ">
                 <CardHeader className="space-y-2 xl:space-y-1 2xl:space-y-2">
-                    <CardTitle className="text-base xl:text-sm 2xl:text-base">{type}</CardTitle>
+                    <CardTitle className="text-base xl:text-sm 2xl:text-base font-light text-gray-500">{type}</CardTitle>
                     <CardTitle className="text-3xl xl:text-3xl 2xl:text-5xl">{count}</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-2 xl:space-y-1 2xl:space-y-2">

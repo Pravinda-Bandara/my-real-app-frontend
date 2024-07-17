@@ -23,8 +23,8 @@ function Navbar() {
 
                 <div className="relative">
                     <Select>
-                        <SelectTrigger className="flex h-12 items-center space-x-2 p-2 rounded-2xl hover:bg-gray-100">
-                            <Avatar >
+                        <SelectTrigger className="flex h-12 items-center space-x-2 p-2 rounded-xl hover:bg-gray-100">
+                            <Avatar className="rounded-xl">
                                 <AvatarImage src="https://github.com/shadcn.png" alt="Moni Roy" />
                                 <AvatarFallback>MR</AvatarFallback>
                             </Avatar>

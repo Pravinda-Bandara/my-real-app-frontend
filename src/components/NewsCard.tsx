@@ -6,7 +6,7 @@ import {Button} from "./ui/button.tsx";
 const NewsCard = ({ title, description, imageUrl }) => {
     return (
         <Card className="max-w-sm border-2 rounded-2xl p-4  overflow-hidden border-2 my-4">
-            <img className="w-full rounded-xl" src={imageUrl} alt="News" />
+            <img className="w-full rounded-xl border-2" src={imageUrl} alt="News" />
             <CardHeader className="p-1 m-1">
                 <CardTitle className="text-sm">{title}</CardTitle>
             </CardHeader>

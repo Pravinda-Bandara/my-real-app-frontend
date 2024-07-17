@@ -10,7 +10,7 @@ const MarketingCard = ({ title, size, pages, imageUrls }) => {
                 <CarouselContent >
                     {imageUrls.map((url, index) => (
                         <CarouselItem className="rounded-2xl flex justify-center p-2" key={index}>
-                            <img className="w-11/12 ml-4 rounded-2xl" src={url} alt={`${title} ${index + 1}`} />
+                            <img className="w-11/12 ml-4 rounded-2xl border-2" src={url} alt={`${title} ${index + 1}`} />
                         </CarouselItem>
                     ))}
                 </CarouselContent>
@@ -20,8 +20,8 @@ const MarketingCard = ({ title, size, pages, imageUrls }) => {
             <CardContent className="px-1 py-4">
                 <div className="font-bold text-sm mb-2 mx-2">{title}</div>
                 <div className="flex justify-start">
-                <p className="bg-gray-300 rounded-2xl p-2 mx-2 text-xs font-bold">{size}</p>
-                <p className="bg-gray-300 rounded-2xl p-2 text-xs font-bold">{pages}</p>
+                <p className="bg-gray-200 rounded-2xl p-2 mx-2 text-xs font-bold">{size}</p>
+                <p className="bg-gray-200 rounded-2xl p-2 text-xs font-bold">{pages}</p>
                 </div>
             </CardContent>
         </div>
