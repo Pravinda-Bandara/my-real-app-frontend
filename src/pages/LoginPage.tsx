@@ -41,7 +41,7 @@ export function LoginPage() {
                 <Card className="sm:h-full flex-col content-center">
                     <CardHeader>
                         <div className="text-center mb-4">
-                            <h2 className="text-2xl font-bold text-blue-600">myRealPage</h2>
+                            <h2 className="text-2xl font-bold text-black"> <span className="text-blue-600">my</span>RealPage</h2>
                             <h3 className="mt-2 text-xl font-semibold">Sign in to your account</h3>
                         </div>
                     </CardHeader>
