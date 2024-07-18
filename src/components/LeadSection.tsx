@@ -9,7 +9,7 @@ const leads = [
         "date": "2024-06-09",
         "type": "Total Leads",
         "count": 100,
-        "change": "8.5%",
+        "change": "8.5% ",
         "status": "up",
         "note": ""
     },
@@ -18,7 +18,7 @@ const leads = [
         "date": "2024-06-09",
         "type": "Total Leads",
         "count": 100,
-        "change": "8.5%",
+        "change": "8.5% ",
         "status": "up",
         "note": ""
     },
